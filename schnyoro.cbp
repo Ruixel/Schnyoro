@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="schnyoro" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/schnyoro" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectCompilerOptionsRelation="0" />
+				<Option projectLinkerOptionsRelation="0" />
+				<Option projectIncludeDirsRelation="0" />
+				<Option projectResourceIncludeDirsRelation="0" />
+				<Option projectLibDirsRelation="0" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/SFML-2.3.2/include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+					<Add library="opengl32" />
+					<Add library="freetype" />
+					<Add library="jpeg" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/SFML-2.3.2/lib" />
+				</Linker>
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/schnyoro" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/sfml/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="freetype" />
+					<Add library="jpeg" />
+					<Add library="sfml-window-s" />
+					<Add library="opengl32" />
+					<Add library="sfml-audio-s" />
+					<Add library="openal32" />
+					<Add library="flac" />
+					<Add library="vorbisenc" />
+					<Add library="vorbisfile" />
+					<Add library="vorbis" />
+					<Add library="ogg" />
+					<Add library="sfml-system-s" />
+					<Add library="winmm" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/sfml/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-DSFML_STATIC" />
+		</Compiler>
+		<Unit filename="include/player_tongue.h" />
+		<Unit filename="src/entities/base/AnimatedSprite.cpp" />
+		<Unit filename="src/entities/base/AnimatedSprite.hpp" />
+		<Unit filename="src/entities/base/Animation.cpp" />
+		<Unit filename="src/entities/base/Animation.hpp" />
+		<Unit filename="src/entities/gameplay/bean.cpp" />
+		<Unit filename="src/entities/gameplay/bean.hpp" />
+		<Unit filename="src/entities/gameplay/bean_manager.cpp" />
+		<Unit filename="src/entities/gameplay/bean_manager.hpp" />
+		<Unit filename="src/entities/gameplay/tile_manager.cpp" />
+		<Unit filename="src/entities/gameplay/tile_manager.hpp" />
+		<Unit filename="src/entities/misc/background.cpp" />
+		<Unit filename="src/entities/misc/background.hpp" />
+		<Unit filename="src/entities/misc/disco_lights.cpp" />
+		<Unit filename="src/entities/misc/disco_lights.hpp" />
+		<Unit filename="src/entities/player/player.cpp" />
+		<Unit filename="src/entities/player/player.hpp" />
+		<Unit filename="src/entities/player/tongue.cpp" />
+		<Unit filename="src/entities/player/tongue.hpp" />
+		<Unit filename="src/game.cpp" />
+		<Unit filename="src/game.hpp" />
+		<Unit filename="src/game_state.hpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/makefile" />
+		<Unit filename="src/player_tongue.cpp" />
+		<Unit filename="src/s_gameplay.cpp" />
+		<Unit filename="src/s_gameplay.hpp" />
+		<Unit filename="src/tex_manager.cpp" />
+		<Unit filename="src/tex_manager.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

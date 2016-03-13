@@ -1,0 +1,1109 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: /home/bag/c++/schnyoro/bin/Debug/schnyoro </line>
+</preamble>
+
+<pid>20657</pid>
+<ppid>688</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind</exe>
+    <arg>--leak-check=full</arg>
+    <arg>--track-origins=yes</arg>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/bag/c++/schnyoro/ValgrindOut.xml</arg>
+  </vargv>
+  <argv>
+    <exe>/home/bag/c++/schnyoro/bin/Debug/schnyoro</exe>
+    <arg></arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.141 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x10EA44</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>player::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/player</dir>
+      <file>player.cpp</file>
+      <line>62</line>
+    </frame>
+    <frame>
+      <ip>0x11388F</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>sGameplay::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>s_gameplay.cpp</file>
+      <line>20</line>
+    </frame>
+    <frame>
+      <ip>0x1105D1</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>Game::gameLoop()</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>game.cpp</file>
+      <line>45</line>
+    </frame>
+    <frame>
+      <ip>0x113236</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>8</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a heap allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C29118</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x113200</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>7</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x1</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x10EA75</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>player::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/player</dir>
+      <file>player.cpp</file>
+      <line>64</line>
+    </frame>
+    <frame>
+      <ip>0x11388F</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>sGameplay::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>s_gameplay.cpp</file>
+      <line>20</line>
+    </frame>
+    <frame>
+      <ip>0x1105D1</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>Game::gameLoop()</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>game.cpp</file>
+      <line>45</line>
+    </frame>
+    <frame>
+      <ip>0x113236</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>8</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a heap allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C29118</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x113200</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>7</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x2</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x10EA92</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>player::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/player</dir>
+      <file>player.cpp</file>
+      <line>66</line>
+    </frame>
+    <frame>
+      <ip>0x11388F</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>sGameplay::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>s_gameplay.cpp</file>
+      <line>20</line>
+    </frame>
+    <frame>
+      <ip>0x1105D1</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>Game::gameLoop()</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>game.cpp</file>
+      <line>45</line>
+    </frame>
+    <frame>
+      <ip>0x113236</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>8</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a heap allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C29118</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x113200</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>7</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x3</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x55B7EFE</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt; std::num_put&lt;char, std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt; &gt;::_M_insert_int&lt;long&gt;(std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt;, std::ios_base&amp;, char, long) const</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>locale_facets.tcc</file>
+      <line>875</line>
+    </frame>
+    <frame>
+      <ip>0x55B81AF</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>std::num_put&lt;char, std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt; &gt;::do_put(std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt;, std::ios_base&amp;, char, bool) const</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>locale_facets.tcc</file>
+      <line>1112</line>
+    </frame>
+    <frame>
+      <ip>0x55C4B8A</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>put</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>locale_facets.h</file>
+      <line>2329</line>
+    </frame>
+    <frame>
+      <ip>0x55C4B8A</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>std::ostream&amp; std::ostream::_M_insert&lt;bool&gt;(bool)</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>ostream.tcc</file>
+      <line>73</line>
+    </frame>
+    <frame>
+      <ip>0x10EC9A</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>player::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/player</dir>
+      <file>player.cpp</file>
+      <line>90</line>
+    </frame>
+    <frame>
+      <ip>0x11388F</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>sGameplay::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>s_gameplay.cpp</file>
+      <line>20</line>
+    </frame>
+    <frame>
+      <ip>0x1105D1</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>Game::gameLoop()</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>game.cpp</file>
+      <line>45</line>
+    </frame>
+    <frame>
+      <ip>0x113236</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>8</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a heap allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C29118</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x113200</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>7</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x4</unique>
+  <tid>1</tid>
+  <kind>UninitValue</kind>
+  <what>Use of uninitialised value of size 8</what>
+  <stack>
+    <frame>
+      <ip>0x55B6D63</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>int std::__int_to_char&lt;char, unsigned long&gt;(char*, unsigned long, char const*, std::_Ios_Fmtflags, bool)</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>locale_facets.tcc</file>
+      <line>803</line>
+    </frame>
+    <frame>
+      <ip>0x55B7F29</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt; std::num_put&lt;char, std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt; &gt;::_M_insert_int&lt;long&gt;(std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt;, std::ios_base&amp;, char, long) const</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>locale_facets.tcc</file>
+      <line>876</line>
+    </frame>
+    <frame>
+      <ip>0x55B81AF</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>std::num_put&lt;char, std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt; &gt;::do_put(std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt;, std::ios_base&amp;, char, bool) const</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>locale_facets.tcc</file>
+      <line>1112</line>
+    </frame>
+    <frame>
+      <ip>0x55C4B8A</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>put</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>locale_facets.h</file>
+      <line>2329</line>
+    </frame>
+    <frame>
+      <ip>0x55C4B8A</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>std::ostream&amp; std::ostream::_M_insert&lt;bool&gt;(bool)</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>ostream.tcc</file>
+      <line>73</line>
+    </frame>
+    <frame>
+      <ip>0x10EC9A</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>player::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/player</dir>
+      <file>player.cpp</file>
+      <line>90</line>
+    </frame>
+    <frame>
+      <ip>0x11388F</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>sGameplay::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>s_gameplay.cpp</file>
+      <line>20</line>
+    </frame>
+    <frame>
+      <ip>0x1105D1</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>Game::gameLoop()</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>game.cpp</file>
+      <line>45</line>
+    </frame>
+    <frame>
+      <ip>0x113236</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>8</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a heap allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C29118</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x113200</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>7</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x5</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x55B6D6F</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>int std::__int_to_char&lt;char, unsigned long&gt;(char*, unsigned long, char const*, std::_Ios_Fmtflags, bool)</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>locale_facets.tcc</file>
+      <line>801</line>
+    </frame>
+    <frame>
+      <ip>0x55B7F29</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt; std::num_put&lt;char, std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt; &gt;::_M_insert_int&lt;long&gt;(std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt;, std::ios_base&amp;, char, long) const</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>locale_facets.tcc</file>
+      <line>876</line>
+    </frame>
+    <frame>
+      <ip>0x55B81AF</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>std::num_put&lt;char, std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt; &gt;::do_put(std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt;, std::ios_base&amp;, char, bool) const</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>locale_facets.tcc</file>
+      <line>1112</line>
+    </frame>
+    <frame>
+      <ip>0x55C4B8A</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>put</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>locale_facets.h</file>
+      <line>2329</line>
+    </frame>
+    <frame>
+      <ip>0x55C4B8A</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>std::ostream&amp; std::ostream::_M_insert&lt;bool&gt;(bool)</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>ostream.tcc</file>
+      <line>73</line>
+    </frame>
+    <frame>
+      <ip>0x10EC9A</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>player::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/player</dir>
+      <file>player.cpp</file>
+      <line>90</line>
+    </frame>
+    <frame>
+      <ip>0x11388F</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>sGameplay::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>s_gameplay.cpp</file>
+      <line>20</line>
+    </frame>
+    <frame>
+      <ip>0x1105D1</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>Game::gameLoop()</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>game.cpp</file>
+      <line>45</line>
+    </frame>
+    <frame>
+      <ip>0x113236</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>8</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a heap allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C29118</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x113200</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>7</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x6</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x55B7F5C</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt; std::num_put&lt;char, std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt; &gt;::_M_insert_int&lt;long&gt;(std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt;, std::ios_base&amp;, char, long) const</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>locale_facets.tcc</file>
+      <line>896</line>
+    </frame>
+    <frame>
+      <ip>0x55B81AF</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>std::num_put&lt;char, std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt; &gt;::do_put(std::ostreambuf_iterator&lt;char, std::char_traits&lt;char&gt; &gt;, std::ios_base&amp;, char, bool) const</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>locale_facets.tcc</file>
+      <line>1112</line>
+    </frame>
+    <frame>
+      <ip>0x55C4B8A</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>put</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>locale_facets.h</file>
+      <line>2329</line>
+    </frame>
+    <frame>
+      <ip>0x55C4B8A</ip>
+      <obj>/usr/lib/libstdc++.so.6.0.21</obj>
+      <fn>std::ostream&amp; std::ostream::_M_insert&lt;bool&gt;(bool)</fn>
+      <dir>/build/gcc/src/gcc-build/x86_64-unknown-linux-gnu/libstdc++-v3/include/bits</dir>
+      <file>ostream.tcc</file>
+      <line>73</line>
+    </frame>
+    <frame>
+      <ip>0x10EC9A</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>player::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/player</dir>
+      <file>player.cpp</file>
+      <line>90</line>
+    </frame>
+    <frame>
+      <ip>0x11388F</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>sGameplay::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>s_gameplay.cpp</file>
+      <line>20</line>
+    </frame>
+    <frame>
+      <ip>0x1105D1</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>Game::gameLoop()</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>game.cpp</file>
+      <line>45</line>
+    </frame>
+    <frame>
+      <ip>0x113236</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>8</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a heap allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C29118</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x113200</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>7</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x7</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x10CA5C</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>background::update()</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/misc</dir>
+      <file>background.cpp</file>
+      <line>7</line>
+    </frame>
+    <frame>
+      <ip>0x1138A1</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>sGameplay::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>s_gameplay.cpp</file>
+      <line>21</line>
+    </frame>
+    <frame>
+      <ip>0x1105D1</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>Game::gameLoop()</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>game.cpp</file>
+      <line>45</line>
+    </frame>
+    <frame>
+      <ip>0x113236</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>8</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a heap allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C29118</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x113200</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>7</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x3d5</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x10EA53</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>player::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/player</dir>
+      <file>player.cpp</file>
+      <line>62</line>
+    </frame>
+    <frame>
+      <ip>0x11388F</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>sGameplay::update(float)</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>s_gameplay.cpp</file>
+      <line>20</line>
+    </frame>
+    <frame>
+      <ip>0x1105D1</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>Game::gameLoop()</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>game.cpp</file>
+      <line>45</line>
+    </frame>
+    <frame>
+      <ip>0x113236</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>8</line>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a heap allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C29118</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x113200</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>7</line>
+    </frame>
+  </stack>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:13.188 </time>
+</status>
+
+<error>
+  <unique>0x3ee</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>16 bytes in 1 blocks are definitely lost in loss record 8 of 66</text>
+    <leakedbytes>16</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C29118</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C76C</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>__gnu_cxx::new_allocator&lt;sf::Rect&lt;int&gt; &gt;::allocate(unsigned long, void const*)</fn>
+      <dir>/usr/include/c++/5.2.0/ext</dir>
+      <file>new_allocator.h</file>
+      <line>104</line>
+    </frame>
+    <frame>
+      <ip>0x10C5C8</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>std::allocator_traits&lt;std::allocator&lt;sf::Rect&lt;int&gt; &gt; &gt;::allocate(std::allocator&lt;sf::Rect&lt;int&gt; &gt;&amp;, unsigned long)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>alloc_traits.h</file>
+      <line>360</line>
+    </frame>
+    <frame>
+      <ip>0x10C3AE</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>std::_Vector_base&lt;sf::Rect&lt;int&gt;, std::allocator&lt;sf::Rect&lt;int&gt; &gt; &gt;::_M_allocate(unsigned long)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>stl_vector.h</file>
+      <line>170</line>
+    </frame>
+    <frame>
+      <ip>0x10BFB4</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>void std::vector&lt;sf::Rect&lt;int&gt;, std::allocator&lt;sf::Rect&lt;int&gt; &gt; &gt;::_M_emplace_back_aux&lt;sf::Rect&lt;int&gt; const&amp;&gt;(sf::Rect&lt;int&gt; const&amp;)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>vector.tcc</file>
+      <line>412</line>
+    </frame>
+    <frame>
+      <ip>0x10BE4B</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>std::vector&lt;sf::Rect&lt;int&gt;, std::allocator&lt;sf::Rect&lt;int&gt; &gt; &gt;::push_back(sf::Rect&lt;int&gt; const&amp;)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>stl_vector.h</file>
+      <line>923</line>
+    </frame>
+    <frame>
+      <ip>0x10BD00</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>Animation::addFrame(sf::Rect&lt;int&gt;)</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/base</dir>
+      <file>Animation.cpp</file>
+      <line>33</line>
+    </frame>
+    <frame>
+      <ip>0x10F054</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>player::constructor(Game*)</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/player</dir>
+      <file>player.cpp</file>
+      <line>137</line>
+    </frame>
+    <frame>
+      <ip>0x113A61</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>sGameplay::sGameplay(Game*)</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>s_gameplay.cpp</file>
+      <line>33</line>
+    </frame>
+    <frame>
+      <ip>0x113215</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>7</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x3f4</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>32 bytes in 1 blocks are definitely lost in loss record 14 of 66</text>
+    <leakedbytes>32</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C29118</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C76C</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>__gnu_cxx::new_allocator&lt;sf::Rect&lt;int&gt; &gt;::allocate(unsigned long, void const*)</fn>
+      <dir>/usr/include/c++/5.2.0/ext</dir>
+      <file>new_allocator.h</file>
+      <line>104</line>
+    </frame>
+    <frame>
+      <ip>0x10C5C8</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>std::allocator_traits&lt;std::allocator&lt;sf::Rect&lt;int&gt; &gt; &gt;::allocate(std::allocator&lt;sf::Rect&lt;int&gt; &gt;&amp;, unsigned long)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>alloc_traits.h</file>
+      <line>360</line>
+    </frame>
+    <frame>
+      <ip>0x10C3AE</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>std::_Vector_base&lt;sf::Rect&lt;int&gt;, std::allocator&lt;sf::Rect&lt;int&gt; &gt; &gt;::_M_allocate(unsigned long)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>stl_vector.h</file>
+      <line>170</line>
+    </frame>
+    <frame>
+      <ip>0x10BFB4</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>void std::vector&lt;sf::Rect&lt;int&gt;, std::allocator&lt;sf::Rect&lt;int&gt; &gt; &gt;::_M_emplace_back_aux&lt;sf::Rect&lt;int&gt; const&amp;&gt;(sf::Rect&lt;int&gt; const&amp;)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>vector.tcc</file>
+      <line>412</line>
+    </frame>
+    <frame>
+      <ip>0x10BE4B</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>std::vector&lt;sf::Rect&lt;int&gt;, std::allocator&lt;sf::Rect&lt;int&gt; &gt; &gt;::push_back(sf::Rect&lt;int&gt; const&amp;)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>stl_vector.h</file>
+      <line>923</line>
+    </frame>
+    <frame>
+      <ip>0x10BD00</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>Animation::addFrame(sf::Rect&lt;int&gt;)</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/base</dir>
+      <file>Animation.cpp</file>
+      <line>33</line>
+    </frame>
+    <frame>
+      <ip>0x10F175</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>player::constructor(Game*)</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/player</dir>
+      <file>player.cpp</file>
+      <line>141</line>
+    </frame>
+    <frame>
+      <ip>0x113A61</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>sGameplay::sGameplay(Game*)</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>s_gameplay.cpp</file>
+      <line>33</line>
+    </frame>
+    <frame>
+      <ip>0x113215</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>7</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x40f</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>64 bytes in 1 blocks are definitely lost in loss record 41 of 66</text>
+    <leakedbytes>64</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C29118</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x10C76C</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>__gnu_cxx::new_allocator&lt;sf::Rect&lt;int&gt; &gt;::allocate(unsigned long, void const*)</fn>
+      <dir>/usr/include/c++/5.2.0/ext</dir>
+      <file>new_allocator.h</file>
+      <line>104</line>
+    </frame>
+    <frame>
+      <ip>0x10C5C8</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>std::allocator_traits&lt;std::allocator&lt;sf::Rect&lt;int&gt; &gt; &gt;::allocate(std::allocator&lt;sf::Rect&lt;int&gt; &gt;&amp;, unsigned long)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>alloc_traits.h</file>
+      <line>360</line>
+    </frame>
+    <frame>
+      <ip>0x10C3AE</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>std::_Vector_base&lt;sf::Rect&lt;int&gt;, std::allocator&lt;sf::Rect&lt;int&gt; &gt; &gt;::_M_allocate(unsigned long)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>stl_vector.h</file>
+      <line>170</line>
+    </frame>
+    <frame>
+      <ip>0x10BFB4</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>void std::vector&lt;sf::Rect&lt;int&gt;, std::allocator&lt;sf::Rect&lt;int&gt; &gt; &gt;::_M_emplace_back_aux&lt;sf::Rect&lt;int&gt; const&amp;&gt;(sf::Rect&lt;int&gt; const&amp;)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>vector.tcc</file>
+      <line>412</line>
+    </frame>
+    <frame>
+      <ip>0x10BE4B</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>std::vector&lt;sf::Rect&lt;int&gt;, std::allocator&lt;sf::Rect&lt;int&gt; &gt; &gt;::push_back(sf::Rect&lt;int&gt; const&amp;)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>stl_vector.h</file>
+      <line>923</line>
+    </frame>
+    <frame>
+      <ip>0x10BD00</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>Animation::addFrame(sf::Rect&lt;int&gt;)</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/base</dir>
+      <file>Animation.cpp</file>
+      <line>33</line>
+    </frame>
+    <frame>
+      <ip>0x10F2E4</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>player::constructor(Game*)</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/player</dir>
+      <file>player.cpp</file>
+      <line>146</line>
+    </frame>
+    <frame>
+      <ip>0x113A61</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>sGameplay::sGameplay(Game*)</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>s_gameplay.cpp</file>
+      <line>33</line>
+    </frame>
+    <frame>
+      <ip>0x113215</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>7</line>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0x419</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>320 (128 direct, 192 indirect) bytes in 1 blocks are definitely lost in loss record 51 of 66</text>
+    <leakedbytes>320</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C29118</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new(unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x10E3E2</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>__gnu_cxx::new_allocator&lt;disco_particle*&gt;::allocate(unsigned long, void const*)</fn>
+      <dir>/usr/include/c++/5.2.0/ext</dir>
+      <file>new_allocator.h</file>
+      <line>104</line>
+    </frame>
+    <frame>
+      <ip>0x10E27F</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>std::allocator_traits&lt;std::allocator&lt;disco_particle*&gt; &gt;::allocate(std::allocator&lt;disco_particle*&gt;&amp;, unsigned long)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>alloc_traits.h</file>
+      <line>360</line>
+    </frame>
+    <frame>
+      <ip>0x10E0B2</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>std::_Vector_base&lt;disco_particle*, std::allocator&lt;disco_particle*&gt; &gt;::_M_allocate(unsigned long)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>stl_vector.h</file>
+      <line>170</line>
+    </frame>
+    <frame>
+      <ip>0x10DCFC</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>void std::vector&lt;disco_particle*, std::allocator&lt;disco_particle*&gt; &gt;::_M_emplace_back_aux&lt;disco_particle*&gt;(disco_particle*&amp;&amp;)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>vector.tcc</file>
+      <line>412</line>
+    </frame>
+    <frame>
+      <ip>0x10DB63</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>void std::vector&lt;disco_particle*, std::allocator&lt;disco_particle*&gt; &gt;::emplace_back&lt;disco_particle*&gt;(disco_particle*&amp;&amp;)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>vector.tcc</file>
+      <line>101</line>
+    </frame>
+    <frame>
+      <ip>0x10D992</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>std::vector&lt;disco_particle*, std::allocator&lt;disco_particle*&gt; &gt;::push_back(disco_particle*&amp;&amp;)</fn>
+      <dir>/usr/include/c++/5.2.0/bits</dir>
+      <file>stl_vector.h</file>
+      <line>932</line>
+    </frame>
+    <frame>
+      <ip>0x10D6DD</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>disco_manager::disco_manager()</fn>
+      <dir>/home/bag/c++/schnyoro/src/entities/misc</dir>
+      <file>disco_lights.cpp</file>
+      <line>46</line>
+    </frame>
+    <frame>
+      <ip>0x113DBE</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>background::background()</fn>
+    </frame>
+    <frame>
+      <ip>0x113924</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>sGameplay::sGameplay(Game*)</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>s_gameplay.cpp</file>
+      <line>26</line>
+    </frame>
+    <frame>
+      <ip>0x113215</ip>
+      <obj>/home/bag/c++/schnyoro/bin/Debug/schnyoro</obj>
+      <fn>main</fn>
+      <dir>/home/bag/c++/schnyoro/src</dir>
+      <file>main.cpp</file>
+      <line>7</line>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+  <pair>
+    <count>143</count>
+    <unique>0x2</unique>
+  </pair>
+  <pair>
+    <count>15</count>
+    <unique>0x3d5</unique>
+  </pair>
+  <pair>
+    <count>140</count>
+    <unique>0x6</unique>
+  </pair>
+  <pair>
+    <count>140</count>
+    <unique>0x5</unique>
+  </pair>
+  <pair>
+    <count>140</count>
+    <unique>0x4</unique>
+  </pair>
+  <pair>
+    <count>140</count>
+    <unique>0x3</unique>
+  </pair>
+  <pair>
+    <count>140</count>
+    <unique>0x1</unique>
+  </pair>
+  <pair>
+    <count>140</count>
+    <unique>0x0</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x7</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+
