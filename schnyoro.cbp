@@ -11,15 +11,12 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option projectCompilerOptionsRelation="0" />
-				<Option projectLinkerOptionsRelation="0" />
-				<Option projectIncludeDirsRelation="0" />
 				<Option projectResourceIncludeDirsRelation="0" />
-				<Option projectLibDirsRelation="0" />
 				<Compiler>
 					<Add option="-std=c++11" />
 					<Add option="-DSFML_STATIC" />
 					<Add directory="C:/Program Files (x86)/CodeBlocks/SFML-2.3.2/include" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-s" />
@@ -51,6 +48,7 @@
 					<Add option="-std=c++11" />
 					<Add option="-DSFML_STATIC" />
 					<Add directory="C:/Program Files (x86)/CodeBlocks/sfml/include" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />

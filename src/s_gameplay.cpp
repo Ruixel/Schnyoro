@@ -20,7 +20,12 @@ void sGameplay::draw(const float dt) {
 
 void sGameplay::update(const float dt) {
   obj_plr.update(dt, obj_tilemgr);
-  obj_beanmgr.update(dt);
+
+  if (obj_plr.canEat())
+      if (obj_beanmgr.AABBcollision(obj_plr.returnTonguePos()))
+        obj_plr.retractTongue();
+
+  obj_beanmgr.update(dt, obj_plr.returnTonguePos(), obj_plr.tongueLength());
   obj_tilemgr.update();
   obj_bg.update();
 

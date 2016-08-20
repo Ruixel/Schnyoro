@@ -11,12 +11,8 @@ void tongue::update(const float dt) {
     }
 
     // Collision //
-    sf::Vector2i tongue_pos(0, 0);
-    if (faceRight)
-        tongue_pos = sf::Vector2i(start_x+length + 25, start_y-length  - 5);
-    else
-        tongue_pos = sf::Vector2i(start_x-length - 8, start_y-length  - 5);
-    // Check if outside the map
+    sf::Vector2i tongue_pos = this->getPos();
+
     if (tongue_pos.x > 164 || tongue_pos.y < 0 || tongue_pos.x < -4)
         state = tgState::RETRACT;
 }
@@ -70,4 +66,23 @@ void tongue::retract() {
 
 bool tongue::canSwallow() {
     return (length < -12 && state == tgState::RETRACT) ? true : false;
+}
+
+bool tongue::canEat() {
+    return (length > 0 && state != tgState::RETRACT) ? true : false;
+}
+
+int tongue::getLength() {
+    return length;
+}
+
+sf::Vector2i tongue::getPos()
+{
+    sf::Vector2i tongue_pos(0, 0);
+    if (faceRight)
+        tongue_pos = sf::Vector2i(start_x+length + 25, start_y-length  - 5);
+    else
+        tongue_pos = sf::Vector2i(start_x-length - 8, start_y-length  - 5);
+
+    return tongue_pos;
 }

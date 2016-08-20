@@ -20,7 +20,7 @@ void player::moveLeft() {
 }
 
 void player::moveRight() {
-  std::cout << "Moving Right" << std::endl;
+  //std::cout << "Moving Right" << std::endl;
   flipPlayer(true);
 
   acceleration_x = WalkingAcceleration;
@@ -194,4 +194,24 @@ void player::retractTongue() {
 void player::die() {
     // TODO: remove tongue (disappear)
     state = pyState::DYING;
+}
+
+sf::Vector2i player::returnTonguePos()
+{
+    if (Tongue != nullptr)
+        return this->Tongue->getPos();
+
+    return sf::Vector2i(0, 0);
+}
+
+bool player::canEat()
+{
+    if (Tongue != nullptr)
+        return Tongue->canEat();
+}
+
+int player::tongueLength()
+{
+    if (Tongue != nullptr)
+        return Tongue->getLength();
 }

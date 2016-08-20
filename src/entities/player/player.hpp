@@ -36,6 +36,10 @@ private:
 public:
   void constructor(Game* game);
 
+  sf::Vector2i returnTonguePos();
+  bool canEat();
+  int tongueLength();
+
   void startMovingLeft();
   void startMovingRight();
   void stopMovingLeft();

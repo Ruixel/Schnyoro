@@ -17,7 +17,8 @@ private:
 public:
     void constructor(Game* game, tile_manager* t_mgr);
 
-    void update(const float dt);
+    void update(const float dt, sf::Vector2i tPos, int tLength);
+    bool AABBcollision(sf::Vector2i tPos);
     void draw();
 };
 

@@ -25,8 +25,12 @@ public:
     void draw();
     void update(const float dt);
 
+    sf::Vector2i getPos();
+
     bool canSwallow();
+    bool canEat();
     void retract();
+    int getLength();
 };
 
 #endif // TONGUE_HPP
