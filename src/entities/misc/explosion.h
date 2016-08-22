@@ -5,15 +5,20 @@
 #include "../../game.hpp"
 #include "../base/AnimatedSprite.hpp"
 #include "../base/Animation.hpp"
+#include "effect.h"
 
-class Explosion {
+class Explosion: public Effect {
 private:
-    Game* game;
+    AnimatedSprite fx_sprite;
+    Animation fx_anim;
 
-    AnimatedSprite exp_sprite;
-    Animation exp_anim;
+    sf::Clock timer;
+    float timeToExpire;
 
 public:
+    void fx_setup(sf::Vector2i pos, const sf::Texture& tex, float speed);
+    void fx_update(const float dt);
+    void fx_draw(Game* game);
 };
 
 #endif // EXPLOSION_H_INCLUDED

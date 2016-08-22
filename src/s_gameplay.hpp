@@ -7,6 +7,7 @@
 #include "entities/misc/background.hpp"
 #include "entities/gameplay/tile_manager.hpp"
 #include "entities/gameplay/bean_manager.hpp"
+#include "entities/misc/effect_manager.h"
 #include "game_state.hpp"
 
 class sGameplay : public GameState {
@@ -17,6 +18,7 @@ private:
   tile_manager obj_tilemgr;
 
   bean_manager obj_beanmgr;
+  EffectManager obj_fxmgr;
 public:
 
   virtual void draw(const float dt);

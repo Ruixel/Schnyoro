@@ -613,7 +613,7 @@
 	"disco_lights.hpp"
 	<stdlib.h>
 
-1471723145 source:c:\c++\schnyoro\src\entities\player\player.cpp
+1471815794 source:c:\c++\schnyoro\src\entities\player\player.cpp
 	"player.hpp"
 	"tongue.hpp"
 	<SFML/Graphics.hpp>
@@ -633,12 +633,12 @@
 	"../../game_state.hpp"
 	"../../game.hpp"
 
-1471723176 source:c:\c++\schnyoro\src\entities\player\tongue.cpp
+1471844454 source:c:\c++\schnyoro\src\entities\player\tongue.cpp
 	"tongue.hpp"
 	<iostream>
 	<SFML/Graphics.hpp>
 
-1450124196 source:c:\c++\schnyoro\src\game.cpp
+1471810375 source:c:\c++\schnyoro\src\game.cpp
 	<stack>
 	<string>
 	<SFML/Graphics.hpp>
@@ -651,12 +651,13 @@
 	"game.hpp"
 	"s_gameplay.hpp"
 
-1450126004 c:\c++\schnyoro\src\s_gameplay.hpp
+1471813245 c:\c++\schnyoro\src\s_gameplay.hpp
 	<SFML/Graphics.hpp>
 	"entities/player/player.hpp"
 	"entities/misc/background.hpp"
 	"entities/gameplay/tile_manager.hpp"
 	"entities/gameplay/bean_manager.hpp"
+	"entities/misc/effect_manager.h"
 	"game_state.hpp"
 
 1456591884 source:c:\c++\schnyoro\src\player_tongue.cpp
@@ -667,7 +668,7 @@
 	<SFML/Graphics.hpp>
 	"../src/game.hpp"
 
-1471723265 source:c:\c++\schnyoro\src\s_gameplay.cpp
+1471844582 source:c:\c++\schnyoro\src\s_gameplay.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"entities/misc/background.hpp"
@@ -1054,4 +1055,31 @@
 	<SFML/System/String.hpp>
 	<string>
 	<vector>
+
+1471813861 source:c:\c++\schnyoro\src\entities\misc\explosion.cpp
+	"Explosion.h"
+
+1471812883 c:\c++\schnyoro\src\entities\misc\explosion.h
+	<SFML/Graphics.hpp>
+	"../../game.hpp"
+	"../base/AnimatedSprite.hpp"
+	"../base/Animation.hpp"
+	"effect.h"
+
+1471843088 source:c:\c++\schnyoro\src\entities\misc\effect_manager.cpp
+	"effect_manager.h"
+
+1471812828 c:\c++\schnyoro\src\entities\misc\effect.h
+	<SFML/Graphics.hpp>
+	"../../game.hpp"
+
+1471813530 c:\c++\schnyoro\src\entities\misc\effect_manager.h
+	<SFML/Graphics.hpp>
+	<vector>
+	"../../game.hpp"
+	"../base/AnimatedSprite.hpp"
+	"../base/Animation.hpp"
+	"effect.h"
+	"explosion.h"
+	<memory>
 

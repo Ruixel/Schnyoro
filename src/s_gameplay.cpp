@@ -14,6 +14,7 @@ void sGameplay::draw(const float dt) {
   obj_tilemgr.draw();
   obj_plr.draw();
   obj_beanmgr.draw();
+  obj_fxmgr.draw(this->game);
 
   return;
 }
@@ -28,6 +29,7 @@ void sGameplay::update(const float dt) {
   obj_beanmgr.update(dt, obj_plr.returnTonguePos(), obj_plr.tongueLength());
   obj_tilemgr.update();
   obj_bg.update();
+  obj_fxmgr.update(dt);
 
   return;
 }
@@ -41,10 +43,12 @@ sGameplay::sGameplay(Game* game) {
   obj_bg.constructor(game);
   obj_plr.constructor(game);
   obj_tilemgr.constructor(game);
+  obj_fxmgr.constructor(game);
 
   obj_beanmgr.constructor(game, &obj_tilemgr);
 
   std::cout << "Heyoo" << std::endl;
+  obj_fxmgr.createExplosion(6);
 }
 
 void sGameplay::handleInput()

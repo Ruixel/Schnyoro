@@ -208,6 +208,8 @@ bool player::canEat()
 {
     if (Tongue != nullptr)
         return Tongue->canEat();
+
+    return false;
 }
 
 int player::tongueLength()

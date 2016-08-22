@@ -54,6 +54,7 @@ void Game::loadTextures() {
   texmgr.loadTexture("img/pyoro.png", "pyoro");
   texmgr.loadTexture("img/tiles.png", "tiles");
   texmgr.loadTexture("img/seed1.png", "bean1");
+  texmgr.loadTexture("img/explosion.png", "explosion");
 
   return;
 }
